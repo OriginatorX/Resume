@@ -1,0 +1,119 @@
+.experience {
+    height: 100%;
+    /*border-radius: 50px 50px 0 0;*/
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    align-items: center;
+    position: relative;
+    top: 100%;
+    z-index: 10;
+}
+
+    .experience.experience_active {
+        box-shadow: 0 -4px 1em black;
+    }
+
+.experience__title {
+    width: 100%;
+    font-size: 34px;
+    color:rgb(0, 0, 0);
+    flex: .35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects {
+    flex: 0.50;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projects__list {
+    width: 75%;
+    font-size: 20px;
+    display: flex;
+    overflow: hidden;
+    transform: scale(0);
+    box-shadow: 3px 4px 2em rgba(0,0,0,0.6);
+    border-radius: 30px;
+}
+
+    .projects__list.projects__list_active {
+        animation-name: slideUp;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+.projects__item {
+    color: white;
+    height: 300px;
+    flex: 35%;
+    transition: flex 650ms;
+    box-shadow: 0 0 19px 3px #000;
+    margin: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    text-decoration: none;
+}
+
+    .projects__item:hover {
+        flex: 0.1 0.1 400px;
+        background-size: 100% 100%;
+        justify-content: flex-start;
+    }
+
+    .projects__item span {
+        padding: 7% 8% 0 8%;
+        color: #FFF;
+        z-index: 2;
+    }
+
+.projects__item_img1 {
+    background: url('../img/wiring.jpg') 0 0 no-repeat;
+}
+
+.projects__item_img2 {
+    background: url('../img/perceptron.jpg') 0 0 no-repeat;
+}
+
+.projects__item_img3 {
+    background: url('../img/overblog.jpg') 0 0 no-repeat;
+}
+
+.projects__item_img4 {
+    background: url('../img/firefox.jpg') 0 0 no-repeat;
+}
+
+.projects__item_img5 {
+    background: url('../img/primeNumber.jpg') 0 0 no-repeat;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    flex: .15;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+    .author span a {
+        text-decoration: none;
+    }

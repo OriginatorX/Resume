@@ -1,0 +1,144 @@
+.introduce {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #FFF;
+}
+
+.personal {
+    width: inherit;
+    flex: .7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.target {
+    flex: .3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .target p {
+        width: 70%;
+        text-align: center;
+        font-size: 28px;
+    }
+
+.personal-intro {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    /*width: 80%;
+    height: 35%;*/
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav {
+    width: 80%;
+    /*height: 30%;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .header__nav a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .header__nav span {
+        border: 2.5px solid black;
+        border-radius: 10px;
+        width: 120px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .1em;
+        transition: .2s linear;
+        cursor: pointer;
+    }
+
+    .header__nav span:hover {
+        color: #FFF;
+        border-color: #FFF;
+        background-color: #000;
+        box-shadow: none;
+    }
+
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*2.0*/
+    margin-bottom: 1.7%;
+}
+
+.avatar__image {
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    border: 2.5px solid black;
+    transition: border-color .18s linear;
+}
+    .avatar__image:hover {
+        border-color: #FFB310;
+    }   
+
+.avatar__description {
+    width: 70%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.personal-description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personal-description__content {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .2s linear;
+    box-shadow: -5px 6px 1.2em black;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+    .personal-description__content.personal-description__content_move {
+        left: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+
+    .personal-description__content p {
+        color: #FFF;
+        font-size: 27px;
+        width: 80%
+    }

@@ -1,0 +1,43 @@
+.preview {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    opacity: 0;
+    transition: .8s linear;
+}
+
+    .preview.preview_show {
+        z-index: 100;
+        opacity: 1;
+    }
+
+.preview__title {
+    overflow: hidden;
+    width: 7ch;
+    font-weight: 200;
+    border-right: .05em solid;
+    font: 5em monospace;
+    animation: 
+        typing 3s steps(7),
+        cursor 1s step-end infinite;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+

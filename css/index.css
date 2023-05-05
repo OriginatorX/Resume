@@ -1,0 +1,15 @@
+@import "preview.css";
+@import "modal.css";
+@import "introduce.css";
+@import "experience.css";
+
+body {
+    font-family: "Gravity-Book", sans-serif;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+    body.no-scroll_mode {
+        overflow: hidden;
+    }
+
