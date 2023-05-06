@@ -53,11 +53,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
     .header__nav a {
         text-decoration: none;
         color: #000;
+        margin: 5px 5px
     }
 
     .header__nav span {
