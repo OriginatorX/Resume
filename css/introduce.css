@@ -103,11 +103,16 @@
     }   
 
 .avatar__description {
-    width: 70%;
+    width: 90%;
     text-align: center;
     margin: 20px 0 0 0;
     font-size: 24px;
     font-weight: bold;
+}
+
+.avatar__name {
+    font-size: 45px;
+    display: block;
 }
 
 .personal-description {
@@ -142,7 +147,8 @@
     .personal-description__content p {
         color: #FFF;
         font-size: 27px;
-        width: 80%
+        width: 80%;
+        line-height: 40px;
     }
 
 .introduce__arrow {
